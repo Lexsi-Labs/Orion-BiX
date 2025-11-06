@@ -152,3 +152,8 @@ This project is released under the MIT License. See [LICENSE](LICENSE) for detai
 For questions, issues, or contributions, please:
 - Open an issue on [GitHub](https://github.com/Lexsi-Labs/Orion-BiX/issues)
 - Join our [Discord](https://discord.gg/dSB62Q7A) community
+
+
+## 🙏 Acknowledgments
+
+Orion-BiX is built on top of [TabICL](https://github.com/soda-inria/tabicl), a tabular foundation model for in-context learning. We gratefully acknowledge the TabICL authors for their foundational work and for making their codebase publicly available.
