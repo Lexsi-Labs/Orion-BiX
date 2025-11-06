@@ -1,0 +1,25 @@
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+*.manifest
+*.spec
+
+# Environments
+.env
+.venv
+.envrc
+.python-version
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Logs & misc
+*.log
