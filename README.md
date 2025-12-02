@@ -21,7 +21,7 @@
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.2+-orange.svg)](https://pytorch.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-**Orion-BiX** is an advanced tabular foundation model that combines **Bi-Axial Attention** with **Meta-Learning** capabilities for few-shot tabular classification. The model extends the TabICL architecture with alternating attention patterns and episode-based training, achieving state-of-the-art performance on domain-specific benchamrks such as Healthcare and Finance.
+**[Orion-BiX](https://arxiv.org/abs/2512.00181)** is an advanced tabular foundation model that combines **Bi-Axial Attention** with **Meta-Learning** capabilities for few-shot tabular classification. The model extends the TabICL architecture with alternating attention patterns and episode-based training, achieving state-of-the-art performance on domain-specific benchamrks such as Healthcare and Finance.
 
 ## 🏗️ Approach and Architecture
 
@@ -141,7 +141,21 @@ The preprocessing is automatically applied during `fit()` and `predict()`, so no
   </table>
 </div>
 
+## Citation
 
+If you use Orion-BiX in your research, please cite our [paper](https://arxiv.org/abs/2512.00181):
+
+```bibtex
+@article{bouadi2025orionbix,
+      title={Orion-Bix: Bi-Axial Attention for Tabular In-Context Learning}, 
+      author={Mohamed Bouadi and Pratinav Seth and Aditya Tanna and Vinay Kumar Sankarapu},
+      year={2025},
+      eprint={2512.00181},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2512.00181}, 
+}
+```
 
 ## License
 
