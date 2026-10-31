@@ -569,7 +569,20 @@ class PreprocessingPipeline(TransformerMixin, BaseEstimator):
         if self.normalization_method != "none":
             if self.normalization_method == "power":
                 self.normalizer_ = PowerTransformer(method="yeo-johnson", standardize=True)
-            # ... (other normalizer options)
+            elif self.normalization_method == "quantile":
+                self.normalizer_ = QuantileTransformer(output_distribution="normal", random_state=self.random_state)
+            elif self.normalization_method == "quantile_rtdl":
+                self.normalizer_ = Pipeline(
+                    [
+                        (
+                            "quantile_rtdl",
+                            RTDLQuantileTransformer(output_distribution="normal", random_state=self.random_state),
+                        ),
+                        ("std", StandardScaler()),
+                    ]
+                )
+            elif self.normalization_method == "robust":
+                self.normalizer_ = RobustScaler(unit_variance=True)
             else:
                 raise ValueError(f"Unknown normalization method: {self.normalization_method}")
             
