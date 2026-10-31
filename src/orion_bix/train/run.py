@@ -21,7 +21,7 @@ from torch.distributed import init_process_group, destroy_process_group
 from tqdm import tqdm
 import wandb
 
-from orion_bix import Orionbix
+from orion_bix import OrionBix
 from orion_bix.prior.dataset import PriorDataset
 from orion_bix.prior.genload import LoadPriorDataset
 from orion_bix.train.optim import get_scheduler
